@@ -1,11 +1,11 @@
 .navbar{
-       list-style: none; 
+       list-style: none;
        background-color: LightBlue;
        overflow: hidden;
        padding: 0;
        width: 557px;
     }
-    
+
     .navbar a, .dropdown div{
         text-decoration: none;
         color: black;
@@ -13,15 +13,15 @@
         padding: 16px;
         display: inline-block;
     }
-    
+
     .navbar li{
         float: left;
     }
-    
+
     .navbar li:hover{
         background-color:blue;
     }
-    
+
     .dropdown-content{
         list-style: none;
         padding: 0;
@@ -30,24 +30,32 @@
         z-index: 1;
         background-color: LightBlue;
     }
-    
+
     .dropdown-content li{
         float: none;
     }
-    
+
     .dropdown:hover .dropdown-content{
         display: block;
     }
-    
+
     .active{
         background-color: yellow;
     }
-    
+
     .paragraph{
         font-size: 12px;
         width: 350px;
     }
-    
+
     .table, tr, td {
         padding: 8px;
     }
+
+    .rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}

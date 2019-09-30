@@ -44,7 +44,7 @@
     }
 
     .paragraph{
-        font-size: 12px;
+        font-size: 14px;
         width: 350px;
     }
 
@@ -70,7 +70,10 @@
 
 .imageborder{
     border:5px solid #021a40;
-}
 .background{
     background-color:aquamarine
+}
+
+.pictures{
+    padding-left: 150px;
 }

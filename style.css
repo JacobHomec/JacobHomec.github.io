@@ -3,7 +3,7 @@
        background-color: LightBlue;
        overflow: hidden;
        padding: 0;
-       width: 557px;
+       width: 580px;
     }
 
     .navbar a, .dropdown div{
@@ -40,11 +40,11 @@
     }
 
     .active{
-        background-color: yellow;
+         background-image: linear-gradient(blue, purple);
     }
 
     .paragraph{
-        font-size: 16px;
+        font-size: 14px;
         width: 350px;
     }
 

@@ -70,8 +70,13 @@
 
 .imageborder{
     border:5px solid #021a40;
+}
 
 .background{
-    background-color:aquamarine
+    background-color:aquamarine;
+}
+
+.caption{
+    font-size: 24px;
 }
 

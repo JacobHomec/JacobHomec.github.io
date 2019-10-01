@@ -48,6 +48,11 @@
         width: 350px;
     }
 
+    .paragraph2{
+        font-size: 13px;
+        width: 350px
+    }
+
     .table, tr, td {
         padding: 8px;
     }

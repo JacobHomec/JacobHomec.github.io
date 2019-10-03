@@ -44,8 +44,8 @@
     }
 
     .paragraph{
-        font-size: 14px;
-        width: 350px;
+        font-size: 16px;
+        width: 400px;
     }
 
     .paragraph2{
@@ -87,10 +87,6 @@
 
 .html {
     height: 100%;
-}
-
-.html2{
-    height: 150%;
 }
 
 .text{

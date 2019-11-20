@@ -211,59 +211,414 @@
 
            function leftSide(){
                pic.src = "images/supreme.png";
-               ptext1.innerHTML = "";
-               ptext2.innerHTML = "";
+               ptext1.innerHTML = "You hear many rumors about different places around town.";
+               ptext2.innerHTML = "Where do you want to explore next?";
                ptext3.innerHTML = "";
                ptext4.innerHTML = "";
-               b1.innerHTML = "Yes";
-               b2.innerHTML = "No";
+               b1.innerHTML = "Mountains";
+               b2.innerHTML = "Forest";
+               b3.innerHTML = "Temple";
+               b4.innerHTML = "";
                b1.style.display = "block";
                b2.style.display = "block";
-               b3.style.display = "none";
+               b3.style.display = "block";
                b4.style.display = "none";
            }
 
            function rightSide(){
                pic.src = "images/supreme.png";
-               ptext1.innerHTML = "";
-               ptext2.innerHTML = "";
+               ptext1.innerHTML = "You have found a mysterious man and decide to interrogate him.";
+               ptext2.innerHTML = "What method do you want to use to interrogate the man?";
                ptext3.innerHTML = "";
                ptext4.innerHTML = "";
-               b1.innerHTML = "Yes";
-               b2.innerHTML = "No";
+               b1.innerHTML = "Search Him";
+               b2.innerHTML = "Use Fire";
+               b3.innerHTML = "Bribe Him";
+               b4.innerHTML = "A Sword";
                b1.style.display = "block";
                b2.style.display = "block";
-               b3.style.display = "none";
-               b4.style.display = "none";
+               b3.style.display = "block";
+               b4.style.display = "block";
            }
 
            function denyConfirm(){
                pic.src = "images/supreme.png";
-               ptext1.innerHTML = "";
+               ptext1.innerHTML = "You have been kidnapped.";
+               ptext2.innerHTML = "Which method do you want to use to escape?";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Kick and scream";
+               b2.innerHTML = "Play dead";
+               b3.innerHTML = "Convince Him";
+               b4.innerHTML = "Wait";
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "block";
+               b4.style.display = "block";
+           }
+
+           function searchMan(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You find a piece of cloth with an emblem on it, then he dies to prevent you from questioning him";
+               ptext2.innerHTML = "Now you have to return to the left side of town.";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Continue";
+               b2.innerHTML = "";
+               b1.style.display = "block";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+           function useFire(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "The fire has worked and he instructs you to visit the mountains.";
                ptext2.innerHTML = "";
                ptext3.innerHTML = "";
                ptext4.innerHTML = "";
-               b1.innerHTML = "Yes";
-               b2.innerHTML = "No";
+               b1.innerHTML = "Visit Mountains";
+               b2.innerHTML = "";
+               b1.style.display = "block";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+            function bribeHim(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "He greedily accepts the bribe and sends you to the forest.";
+               ptext2.innerHTML = "";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Visit Forest";
+               b2.innerHTML = "";
+               b1.style.display = "block";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+
+           function swordDeath(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "The authorities have caught you with a sword and kill you.";
+               ptext2.innerHTML = "";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b1.style.display = "none";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+           function mountains(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You head to the mountains and come across a group of merchants being attacked by wolves.";
+               ptext2.innerHTML = "What do you do?";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Use a Sword";
+               b2.innerHTML = "Nothing";
+               b3.innerHTML = "Use a Rake";
+               b4.innerHTML = "Distract The Wolves"; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "block";
+               b4.style.display = "block";
+           }
+
+            function forest(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You find a secret hideout in the middle of the forest and want to explore it.";
+               ptext2.innerHTML = "How do you want to enter?";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Wait";
+               b2.innerHTML = "Turn Back";
+               b3.innerHTML = "Walk Through The Gate";
+               b4.innerHTML = "Cause Havoc"; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "block";
+               b4.style.display = "block";
+           }
+
+           
+            function temple(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You enter the temple and out of nowhere you start to get attacked by villans.";
+               ptext2.innerHTML = "What do you want to do to get away from the villans.";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Run";
+               b2.innerHTML = "Use a Sword";
+               b3.innerHTML = "Use Fire";
+               b4.innerHTML = "Surrender"; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "block";
+               b4.style.display = "block";
+           }
+
+           function useSword(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You use your sword to help the merchants fight off the wolves.";
+               ptext2.innerHTML = "You get a key from the merchants.";
+               ptext3.innerHTML = "What side of town do you want to explore next?";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Right Side";
+               b2.innerHTML = "Continue Left Side";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
                b1.style.display = "block";
                b2.style.display = "block";
                b3.style.display = "none";
                b4.style.display = "none";
            }
 
-           function changeMind(){
+           function nothing(){
                pic.src = "images/supreme.png";
-               ptext1.innerHTML = "";
-               ptext2.innerHTML = "";
+               ptext1.innerHTML = "You have chosen to leave the merchants and let them be attacked by wolves.";
+               ptext2.innerHTML = "You get no clues from this, and have failed your mission.";
                ptext3.innerHTML = "";
                ptext4.innerHTML = "";
-               b1.innerHTML = "Yes";
-               b2.innerHTML = "No";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "none";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+           function useRake(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You have chosen to use a rake.";
+               ptext2.innerHTML = "The rake scares off the wolves and the merchants gift you with an emblem.";
+               ptext3.innerHTML = "Where do you want to go to next?";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Left Side Of Town";
+               b2.innerHTML = "Right Side Of Town";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
                b1.style.display = "block";
                b2.style.display = "block";
                b3.style.display = "none";
                b4.style.display = "none";
            }
+
+           function distract(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You choose to distract the wolves.";
+               ptext2.innerHTML = "You run away from the wolves and run into a secret hideout in the forest.";
+               ptext3.innerHTML = "Where do you want to visit next?";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Forest";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+           function fire(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "The fire works against the villains.";
+               ptext2.innerHTML = "You explore the temple and find a mysterious key and decide to take it with you.";
+               ptext3.innerHTML = "Where do you want to explore next?";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Temple";
+               b2.innerHTML = "Mountains";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+           function run(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You try to run, but the villains catch up and you fail your mission.";
+               ptext2.innerHTML = "";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "block";
+               b4.style.display = "none";
+           }
+
+           function swordUse(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "The villains are too powerful for the sword, and you can't stop them.";
+               ptext2.innerHTML = "";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "block";
+               b4.style.display = "none";
+           }
+
+           function surrender(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You have been kidnapped by the villains.";
+               ptext2.innerHTML = "";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Continue";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+             function causeHavoc(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You sneak up behind the guard tower.";
+               ptext2.innerHTML = "You succesfully topple over the tower and set the camp on fire.";
+               ptext3.innerHTML = "As you make your way around the camp, you need to find a way to enter the main building.";
+               ptext4.innerHTML = "How do you want to attempt you entrance?";
+               b1.innerHTML = "Knock on the door";
+               b2.innerHTML = "Use a key";
+               b3.innerHTML = "Break in the window";
+               b4.innerHTML = ""; 
+               b1.style.display = "none";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+             function wait(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You decided to wait until night and attempt to sneak in.";
+               ptext2.innerHTML = "You spot a guard waiting, how do you want to get past him?";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Try to convince him";
+               b2.innerHTML = "Through a window";
+               b3.innerHTML = "Use a sword";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "block";
+               b4.style.display = "none";
+           }
+
+             function enterGate(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You act normal and enter through the gate, but a guard stops you.";
+               ptext2.innerHTML = "You show him your emblem in hopes of letting you by.";
+               ptext3.innerHTML = "It is succesful and he tells you to help set up a feast that is going on.";
+               ptext4.innerHTML = "What do you plan on doing?";
+               b1.innerHTML = "Follow his orders and wait";
+               b2.innerHTML = "Enter the house immediately";
+               b3.innerHTML = "Use a poison drink";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "block";
+               b4.style.display = "none";
+           }
+
+             function turnBack(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You decide to try and make your way back to the village.";
+               ptext2.innerHTML = "On you return, you are spotted and interrogated.";
+               ptext3.innerHTML = "The answers you give do not add up and you are turned into the authorities.";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "block";
+               b4.style.display = "none";
+           }
+
+           function kickScream(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "The guard starts to get annoyed and decides to turn you in.";
+               ptext2.innerHTML = "";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "none";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+           function playDead(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "The guard has seen this trick before and does not fall for it.";
+               ptext2.innerHTML = "You have been turned in.";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "none";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }  
+
+           function waiting(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You wait and try to get help.";
+               ptext2.innerHTML = "The travelers have been saved and you have completed your mission and got your money.";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "none";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+           function convince(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You try to convince the guard but he does not see your emblem adn turns you in.";
+               ptext2.innerHTML = "";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "none";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }                                
+
 
             function bclick(button){
                 if(state == "choosePath"){
@@ -307,10 +662,11 @@
                             state = "denyConfirm";
                         }
                     else if(button == 2){
-                            changeMind();
-                            state = "changeMind";
+                            acceptBounty();
+                            state = "acceptBounty";
                     }
                 }
+
                 else if(state == "acceptBounty"){
                         if (button == 1){
                             rightSide();
@@ -319,6 +675,174 @@
                     else if(button == 2){
                             leftSide();
                             state = "leftSide";
+                    }
+                }
+
+                else if(state == "denyConfirm"){
+                        if (button == 1){
+                            kickScream();
+                            state = "kickScream";
+                        }
+                    else if(button == 2){
+                            playDead();
+                            state = "playDead";
+                        }
+                    else if(button == 3){
+                            waiting();
+                            state = "waiting";
+                        }
+                            else if(button == 4){
+                            convince();
+                            state = "convince";
+                    }
+                }
+
+                else if(state == "rightSide"){
+                        if (button == 1){
+                            searchMan();
+                            state = "searchMan";
+                        }
+                    else if(button == 2){
+                            useFire();
+                            state = "useFire";
+                        }
+                    else if(button == 3){
+                            bribeHim();
+                            state = "bribeHim";
+                        }
+                    else if(button == 4){
+                            swordDeath();
+                            state = "swordDeath";
+                    }
+                }
+
+                 else if(state == "searchMan"){
+                        if (button == 1){
+                            leftSide();
+                            state = "leftSide";
+                    }
+                }
+
+                else if(state == "useFire"){
+                        if (button == 1){
+                            mountains();
+                            state = "mountains";
+                    }
+                }
+
+                else if(state == "bribeHim"){
+                        if (button == 1){
+                            forest();
+                            state = "forest";
+                    }
+                }
+
+                else if(state == "leftSide"){
+                    if (button == 1){
+                        mountains();
+                    state = "mountains";
+                    }
+                    else if(button == 2){
+                        forest();
+                    state = "forest";
+                    }
+                    else if(button == 3){
+                        temple();
+                    state = "temple";
+                    }
+                }
+
+                    else if(state == "mountains"){
+                    if (button == 1){
+                        useSword();
+                        state = "useSword";
+                    }
+                    else if(button == 2){
+                        nothing();
+                        state = "nothing";
+                    }
+                    else if(button == 3){
+                        useRake();
+                        state = "useRake";
+                    }
+                    else if(button == 4){
+                        distract();
+                        state = "distract";
+                    }
+                }
+
+                else if(state == "useSword"){
+                    if (button == 1){
+                        rightSide();
+                        state = "rightSide";
+                    }
+                    else if(button == 2){
+                        leftSide();
+                        state = "leftSide";
+                    }
+                }
+
+                else if(state == "distract"){
+                    if (button == 1){
+                        forest();
+                        state = "forest";
+                    }
+                }
+
+                else if(state == "useRake"){
+                    if (button == 1){
+                        leftSide();
+                        state = "leftSide";
+                    }
+                    else if (button == 2){
+                        rightSide();
+                        state = "rightSide";
+                    }
+                }
+
+                 else if(state == "forest"){
+                    if (button == 1){
+                        causeHavoc();
+                        state = "causeHavoc";
+                    }
+                    else if(button == 2){
+                        wait();
+                        state = "wait";
+                    }
+                    else if(button == 3){
+                        enterGate();
+                        state = "enterGate";
+                    }
+                    else if(button == 4){
+                        turnBack();
+                        state = "turnBack";
+                    }
+                }
+
+                 else if(state == "temple"){
+                    if (button == 1){
+                        fire();
+                        state = "fire";
+                    }
+                    else if(button == 2){
+                        run();
+                        state = "run";
+                    }
+                    else if(button == 2){
+                        swordUse();
+                        state = "swordUse";
+                    }
+                    else if(button == 4){
+                        surrender();
+                        state = "surrender";
+                    }
+                }
+
+                else if(state == "surrender"){
+                    if (button == 1){
+                        denyConfirm();
+                        state = "denyConfirm";
+        
                     }
                 }
                 return false;

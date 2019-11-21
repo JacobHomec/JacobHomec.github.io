@@ -353,9 +353,9 @@
                ptext2.innerHTML = "What do you want to do to get away from the villans.";
                ptext3.innerHTML = "";
                ptext4.innerHTML = "";
-               b1.innerHTML = "Run";
-               b2.innerHTML = "Use a Sword";
-               b3.innerHTML = "Use Fire";
+               b1.innerHTML = "Use Fire";
+               b2.innerHTML = "Run";
+               b3.innerHTML = "Use Sword";
                b4.innerHTML = "Surrender"; 
                b1.style.display = "block";
                b2.style.display = "block";
@@ -433,7 +433,7 @@
                ptext2.innerHTML = "You explore the temple and find a mysterious key and decide to take it with you.";
                ptext3.innerHTML = "Where do you want to explore next?";
                ptext4.innerHTML = "";
-               b1.innerHTML = "Temple";
+               b1.innerHTML = "Forest";
                b2.innerHTML = "Mountains";
                b3.innerHTML = "";
                b4.innerHTML = ""; 
@@ -453,9 +453,9 @@
                b2.innerHTML = "";
                b3.innerHTML = "";
                b4.innerHTML = ""; 
-               b1.style.display = "block";
-               b2.style.display = "block";
-               b3.style.display = "block";
+               b1.style.display = "none";
+               b2.style.display = "none";
+               b3.style.display = "none";
                b4.style.display = "none";
            }
 
@@ -469,9 +469,9 @@
                b2.innerHTML = "";
                b3.innerHTML = "";
                b4.innerHTML = ""; 
-               b1.style.display = "block";
-               b2.style.display = "block";
-               b3.style.display = "block";
+               b1.style.display = "none";
+               b2.style.display = "none";
+               b3.style.display = "none";
                b4.style.display = "none";
            }
 
@@ -491,22 +491,6 @@
                b4.style.display = "none";
            }
 
-             function causeHavoc(){
-               pic.src = "images/supreme.png";
-               ptext1.innerHTML = "You sneak up behind the guard tower.";
-               ptext2.innerHTML = "You succesfully topple over the tower and set the camp on fire.";
-               ptext3.innerHTML = "As you make your way around the camp, you need to find a way to enter the main building.";
-               ptext4.innerHTML = "How do you want to attempt you entrance?";
-               b1.innerHTML = "Knock on the door";
-               b2.innerHTML = "Use a key";
-               b3.innerHTML = "Break in the window";
-               b4.innerHTML = ""; 
-               b1.style.display = "none";
-               b2.style.display = "none";
-               b3.style.display = "none";
-               b4.style.display = "none";
-           }
-
              function wait(){
                pic.src = "images/supreme.png";
                ptext1.innerHTML = "You decided to wait until night and attempt to sneak in.";
@@ -516,6 +500,22 @@
                b1.innerHTML = "Try to convince him";
                b2.innerHTML = "Through a window";
                b3.innerHTML = "Use a sword";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "block";
+               b4.style.display = "none";
+           }
+
+           function causeHavoc(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You sneak up behind the guard tower.";
+               ptext2.innerHTML = "Succesfully, you set fire on the camp and manage to topple over the main tower, distracting everyone.";
+               ptext3.innerHTML = "You rush into the camp.";
+               ptext4.innerHTML = "How do you want to enter the main building?";
+               b1.innerHTML = "Knock on door";
+               b2.innerHTML = "Break window";
+               b3.innerHTML = "Use a key";
                b4.innerHTML = ""; 
                b1.style.display = "block";
                b2.style.display = "block";
@@ -549,9 +549,9 @@
                b2.innerHTML = "";
                b3.innerHTML = "";
                b4.innerHTML = ""; 
-               b1.style.display = "block";
-               b2.style.display = "block";
-               b3.style.display = "block";
+               b1.style.display = "none";
+               b2.style.display = "none";
+               b3.style.display = "none";
                b4.style.display = "none";
            }
 
@@ -617,7 +617,119 @@
                b2.style.display = "none";
                b3.style.display = "none";
                b4.style.display = "none";
-           }                                
+           }
+
+           function knockDoor(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "That was a dumb decision.";
+               ptext2.innerHTML = "A guard answers the door, captures and turns you in.";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "none";
+               b2.style.display = "none";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+           function breakWindow(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "The leader of the camp spots you and prepares to fight you.";
+               ptext2.innerHTML = "How do you want to fight?";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Hat";
+               b2.innerHTML = "Sword";
+               b3.innerHTML = "Beg for mercy";
+               b4.innerHTML = "Your hands"; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "block";
+               b4.style.display = "block";
+           }
+
+           function useKey(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "You see a key near a small potted plant and it works!";
+               ptext2.innerHTML = "You sneak up behind the leader and defeat him!";
+               ptext3.innerHTML = "To secure your bounty, how do you want to escape from the camp?";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "Disguise";
+               b2.innerHTML = "Run!";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+           function swordAgain(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "";
+               ptext2.innerHTML = "";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+            function hat(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "";
+               ptext2.innerHTML = "";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+            function begMercy(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "";
+               ptext2.innerHTML = "";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }
+
+            function bareHand(){
+               pic.src = "images/supreme.png";
+               ptext1.innerHTML = "";
+               ptext2.innerHTML = "";
+               ptext3.innerHTML = "";
+               ptext4.innerHTML = "";
+               b1.innerHTML = "";
+               b2.innerHTML = "";
+               b3.innerHTML = "";
+               b4.innerHTML = ""; 
+               b1.style.display = "block";
+               b2.style.display = "block";
+               b3.style.display = "none";
+               b4.style.display = "none";
+           }                                   
 
 
             function bclick(button){
@@ -802,22 +914,57 @@
 
                  else if(state == "forest"){
                     if (button == 1){
-                        causeHavoc();
-                        state = "causeHavoc";
-                    }
-                    else if(button == 2){
                         wait();
                         state = "wait";
+                    }
+                    else if(button == 2){
+                        turnBack();
+                        state = "turnBack";
                     }
                     else if(button == 3){
                         enterGate();
                         state = "enterGate";
                     }
                     else if(button == 4){
-                        turnBack();
-                        state = "turnBack";
+                        causeHavoc();
+                        state = "causeHavoc";
                     }
                 }
+
+                else if(state == "causeHavoc"){
+                    if (button == 1){
+                        knockDoor();
+                        state = "knockDoor";
+                    }
+                    else if(button == 2){
+                        breakWindow();
+                        state = "breakWindow";
+                    }
+                    else if(button == 3){
+                        useKey();
+                        state = "useKey";
+                    }
+                }
+
+                else if(state == "breakWindow"){
+                    if (button == 1){
+                        swordAgain();
+                        state = "swordAgain";
+                    }
+                    else if(button == 2){
+                        hat();
+                        state = "hat";
+                    }
+                    else if(button == 3){
+                        begMercy();
+                        state = "begMercy";
+                    }
+                    else if(button == 4){
+                        bareHand();
+                        state = "bareHand";
+                    }
+                }
+
 
                  else if(state == "temple"){
                     if (button == 1){
@@ -828,7 +975,7 @@
                         run();
                         state = "run";
                     }
-                    else if(button == 2){
+                    else if(button == 3){
                         swordUse();
                         state = "swordUse";
                     }
@@ -845,6 +992,20 @@
         
                     }
                 }
+
+                else if(state == "fire"){
+                    if (button == 1){
+                        forest();
+                        state = "forest";
+                    }
+
+                    else if(button == 2){
+                        mountains();
+                        state = "mountains";
+                    }
+                }
+
+                
                 return false;
             }
 

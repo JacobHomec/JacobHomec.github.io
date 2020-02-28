@@ -55,6 +55,10 @@
         color: aquamarine;
     }
 
+    .header{
+        color: aquamarine;
+    }
+
     .table, tr, td {
         padding: 8px;
     }
